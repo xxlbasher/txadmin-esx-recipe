@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
-name: "ESX Legacy + Addons Base"
-version: 1.0.3
+name: "ESX Legacy Base (txAdmin Compatible)"
+version: 1.0.4
 author: "xxlbasher"
 
 tasks:
@@ -11,10 +11,14 @@ tasks:
     dest: ./tmp/esxlegacy
 
   - action: move_path
-    src: ./tmp/esxlegacy
+    src: ./tmp/esxlegacy/resources
     dest: ./resources
 
   - action: download_github
     src: https://github.com/esx-framework/esx-legacy-addons
     ref: main
+    dest: ./tmp/addons
+
+  - action: move_path
+    src: ./tmp/addons
     dest: ./resources/[esx_addons]
