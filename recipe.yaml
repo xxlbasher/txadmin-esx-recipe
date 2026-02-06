@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: "ESX Legacy + Addons Base"
-version: 1.0.1
+version: 1.0.2
 author: "xxlbasher"
 
 tasks:
@@ -18,4 +18,3 @@ tasks:
     src: https://github.com/esx-framework/esx-legacy-addons
     ref: main
     dest: ./resources/[esx_addons]
-
